@@ -90,7 +90,7 @@ E_{\text{MD-tors}} &= E_{\text{MD}} - E_{\text{tors}}\\
 
 The barrier heights of this were then substracted from the barrier heights obtained using the B3LYP and SCF methods, yielding $V_{\text{fit}}$. 
 
-The Ryckaert-Bellemans potential is a 5th order trigonometric polynomial. 
+The Ryckaert-Bellemans potential is a 5th order trigonometric polynomial\footnote{The form given in the exercises was wrong, it had the sum going from $n=[1,5]$. The used form was found on Gromacs manual. The constrained polynomial fit with $C_0 = 0$ could have been done using some curve fitting method, but polynomial fitting was easier :)}. 
 
 \begin{align}
 V_{rb}(\phi_{ijkl}) = \sum_{n=0}^5 C_n (\cos (\p si))^n
